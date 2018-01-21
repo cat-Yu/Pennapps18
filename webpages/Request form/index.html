@@ -28,6 +28,7 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+
 </head>
 <body>
 
@@ -41,23 +42,23 @@
 
 				<div class="wrap-input100 validate-input bg1" data-validate="Please Enter the amount">
 					<span class="label-input100">Amount *</span>
-					<input class="input100" type="text" name="name" placeholder="Enter the amount you are requesting">
+					<input class="input100" type="text" name="amount" placeholder="Enter the amount you are requesting">
 				</div>
 
 				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "Please Enter the date in the correct form">
 					<span class="label-input100">Start Date *  (enter 012118 if you want it on Jan,21,2018) </span>
-					<input class="input100" type="text" name="email" placeholder="When do you need the money?">
+					<input class="input100" type="text" name="startDate" placeholder="When do you need the money?">
 				</div>
                 
 				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "Please Enter the date in the correct form">
 					<span class="label-input100">End Date * (enter 012218 if you will return it on Jan,22,2018)</span>
-					<input class="input100" type="text" name="phone" placeholder="When will you return? ">
+					<input class="input100" type="text" name="endDate" placeholder="When will you return? ">
 				</div>
 
 				
-
+        
 				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
+					<button class="contact100-form-btn" onclick="return confirm('Are you sure?')">
 						<span>
 							Submit
 							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
@@ -68,7 +69,8 @@
 		</div>
 	</div>
 
-
+    <body>
+    </body>
 
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
